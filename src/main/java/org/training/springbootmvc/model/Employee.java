@@ -1,10 +1,25 @@
 package org.training.springbootmvc.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Employee {
 
+    @Id
     private int eid;
-    private String fName;
-    private String lName;
+
+    private String firstname;
+    private String lastname;
+
+    public Employee() {
+    }
+
+    public Employee(int eid, String firstname, String lastname) {
+        this.eid = eid;
+        this.firstname = firstname;
+        this.lastname = lastname;
+    }
 
     public int getEid() {
         return eid;
@@ -14,28 +29,28 @@ public class Employee {
         this.eid = eid;
     }
 
-    public String getfName() {
-        return fName;
+    public String getFirstname() {
+        return firstname;
     }
 
-    public void setfName(String fName) {
-        this.fName = fName;
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
 
-    public String getlName() {
-        return lName;
+    public String getLastname() {
+        return lastname;
     }
 
-    public void setlName(String lName) {
-        this.lName = lName;
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
     }
 
     @Override
     public String toString() {
         return "Employee{" +
                 "eid=" + eid +
-                ", fName='" + fName + '\'' +
-                ", lName='" + lName + '\'' +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
                 '}';
     }
 }

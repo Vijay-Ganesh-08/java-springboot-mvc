@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    Result : ${employee}
+Result : ${employee}
 
 </body>
 </html>

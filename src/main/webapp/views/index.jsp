@@ -12,10 +12,25 @@
 
     <form action="addEmployee">
         Enter the id Number: <input type="text" name="eid"><br>
-        Enter the FirstName: <input type="text" name="fName"><br>
-        Enter the LastName: <input type="text" name="lName"><br>
+        Enter the FirstName: <input type="text" name="firstname"><br>
+        Enter the LastName: <input type="text" name="lastname"><br>
         <input type="submit">
     </form>
-
+    <hr>
+    <form action="getEmployeeById">
+        Enter the id Number: <input type="text" name="eid"><br>
+        <input type="submit">
+    </form>
+    <hr>
+    <form action="getEmployeeByFirstName">
+        Enter the First Name: <input type="text" name="firstName"><br>
+        <input type="submit">
+    </form>
+    <hr>
+    <form action="getEmployeeByLastName">
+        Enter the Last Name: <input type="text" name="lastName"><br>
+        <input type="submit">
+    </form>
+    <hr>
 </body>
 </html>
